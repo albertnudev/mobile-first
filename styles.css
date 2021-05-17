@@ -27,7 +27,7 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
-header {
+.header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -38,13 +38,13 @@ header {
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
-header img {
+.header__img {
     width: 150px;
     height: 24px;
     margin-top: 60px;
     align-self: center;
 }
-.header--title-container {
+.header__title__container {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -53,20 +53,21 @@ header img {
     text-align: center;
     align-self: center;
 }
-.header--title-container h1 {
+.header__h1 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color:  var(--just-white);
 }
-.header--title-container p {
+/* OJO AQUI */
+.header__p {
     margin-top: 25px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
-.header--title-container .header--button {
+.header__button {
     position: absolute;
     left: calc(50% - 118px);
     top: 270px;
@@ -85,35 +86,27 @@ header img {
     text-decoration: none;
     color: var(--black);
 }
-
-.header--title-container span {
+.header__button__arrow {
     display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: 10px;
     background-image: url("https://personalproyects.s3.us-east-2.amazonaws.com/assets/icons/down-arrow.svg");
 }
-main {
+.main {
     width: 100%;
     height: auto;
     min-width: 320px;
     background-color: var(--off-white);
-}
-.main-exchange-container {
+} 
+.exchange__container {
     width: 100%;
     height: auto;
     padding-top: 80px;
     padding-bottom: 20px;
     text-align: center;
 }
-.main-exchange-container--title {
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.main-exchange-container .backgroundImg {
+.exchange__background--img {
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -123,14 +116,20 @@ main {
     background-position: center;
     background-repeat: no-repeat;  
 }
-.main-exchange-container h2 {
+.exchange__title__container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.exchange__title {
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
 }
-.main-exchange-container p {
+.exchange__p {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -139,8 +138,10 @@ main {
 }
 
  /*----------------- */
-
- .main__tables__container{
+ .exchange__tables__container{
+    overflow: hidden;
+ }
+ .exchange__tables__container {
     display: flex;
     align-items: baseline;
     overflow-x: scroll; /*Trabajmos con el Overflow que genera horizontalmente*/
@@ -150,8 +151,8 @@ main {
 }
 
 .currency__container{
-    width: 90%;
-    min-width: 288px;
+    width: 70%; /*90*/
+    min-width: 335px; /*288*/
     max-width: 500px;
     height: 360px;
     margin: 0 auto;
@@ -160,7 +161,7 @@ main {
     margin-right: 20px;
 }
 
-p.currency__title{
+.currency__title{
     color: var(--bitcoin-orange);
     font-weight: 700;
     font-style: normal;
@@ -188,7 +189,7 @@ p.currency__title{
     width: 50%;
     font-weight: 500;
     font-size: 1.6rem;
-    line-height: 19.36px;
+    line-height: 1.9rem;
     background-color: var(--just-white);
     padding: 1rem 1.2rem;
 }
@@ -255,8 +256,8 @@ p.currency__title{
 
 
 .commissions__container{
-    width: 90%;
-    min-width: 288px;
+    width: 70%; /*90*/
+    min-width: 335px; /*288*/
     max-width: 500px;
     height: 360px;
     margin-top: 4rem;
