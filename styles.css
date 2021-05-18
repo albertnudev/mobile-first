@@ -405,3 +405,22 @@ p.commissions__title{
     line-height: 1.8rem;
     color: #808080;
 }
+/*------------------- Bitcoin block ------------------*/
+.bitcoin__img {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("https://personalproyects.s3.us-east-2.amazonaws.com/assets/img/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin__h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+
+}
