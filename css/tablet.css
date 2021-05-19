@@ -1,0 +1,19 @@
+.exchange__tables__container{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto ;
+    justify-content: center;
+    align-items: center;
+}
+.product__detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.plans__slider__container {
+    justify-content: center;
+}
