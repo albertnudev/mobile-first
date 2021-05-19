@@ -140,18 +140,21 @@ html {
 }
 
  /*-------- Tables block--------- */
- .exchange__tables__container{
-    overflow: hidden;
- }
+ 
  .exchange__tables__container {
     display: flex;
-    align-items: baseline;
     overflow-x: scroll; /*Trabajmos con el Overflow que genera horizontalmente*/
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     padding: 1rem 0;
 }
-
+.exchange__tables__container::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+  }
+.exchange__tables__container::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
 .currency__container{
     width: 70%; /*90*/
     min-width: 335px; /*288*/
@@ -267,7 +270,7 @@ html {
     padding-right: 20px;
 }
 
-p.commissions__title{
+.commissions__title{
     color: var(--secondary-blue);
     font-weight: 700;
     font-size: 1.8rem;
@@ -452,4 +455,87 @@ p.commissions__title{
     line-height: 1.8rem;
     color: #757575;
 }
+.plans__slider__container{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans__slider__container::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+}
+.plans__slider__container::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
+.plan__card__container {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 290px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recommended {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.plan__card__title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan__card__price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5rem;
+    color: black
+}
+.plan__card__price__span {
+    font-size: 1.2rem;
+    font-weight: 300; 
+}
+.plan__card__saving {
+    font-size: 1.2rem;
+    color: #757575;
+}
+.plan__card__ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan__card__ca__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://personalproyects.s3.us-east-2.amazonaws.com/assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
 
